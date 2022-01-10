@@ -4,6 +4,7 @@ Documentation       Aqui contém o arquivo principal do projeto
 
 Library             Browser
 Library             String
+Resource            actions.robot
 
 *Variables*
 ${BASE_URL}         https://nbank.vercel.app/

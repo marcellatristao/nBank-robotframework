@@ -1,6 +1,6 @@
 # Automação de dois cenários na Webapp nBank
 Cenario 1: Saldo
-Quando acesso a home nBank Então devo ver meu saldo inicial no valor de R$ 1000
+Quando acesso a home nBank Então devo ver meu saldo inicial no valor de R$ 1000 -OK
 
 Cenario 2: Fazer PIX
 Dado que meu saldo é de R$ 1000 E acesso a home nBank Quando faço um PIX no valor de R$ 100 Então meu saldo final deve ser de R$ 900 E a transação em questão é adicionada no meu Extrato

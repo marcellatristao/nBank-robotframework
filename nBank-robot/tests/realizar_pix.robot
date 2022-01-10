@@ -1,15 +1,15 @@
 *Settings*
 
 Resource        ${EXECDIR}/resources/base.robot
+Library         ${EXECDIR}/resources/factories/dados.py
 
 Test Setup      Start Session
 Test Teardown   End Session
 
 *Test Cases*
+Fazer PIX
 
-#Fazer PIX
+    ${pix}     Factory Pix
 
-#Fazer PIX com valor = 0
-
-#Fazer PIX com valor negativo
-
+    Go To Form
+    Fill Form       ${pix}
