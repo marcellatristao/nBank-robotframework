@@ -11,7 +11,7 @@ ${BASE_URL}         https://nbank.vercel.app/
 
 *Keywords*
 Start Session
-    New Browser     chromium    headless=False      SlowMo=00:00:01
+    New Browser     chromium    headless=False
     New Page        ${BASE_URL}
 
 End Session
