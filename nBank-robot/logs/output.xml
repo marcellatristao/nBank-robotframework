@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220110 14:33:31.444" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.10.1 on win32)" generated="20220111 21:15:18.597" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="C:\Repositórios GIT\nBank-robotframework\nBank-robot\tests">
-<suite id="s1-s1" name="Online" source="C:\Repositórios GIT\nBank-robotframework\nBank-robot\tests\online.robot">
+<suite id="s1-s1" name="Realizar Pix" source="C:\Repositórios GIT\nBank-robotframework\nBank-robot\tests\realizar_pix.robot">
 <test id="s1-s1-t1" name="Nbank deve estar online">
 <kw name="Start Session" library="base" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>chromium</arg>
 <arg>headless=False</arg>
+<arg>slowMo=00:00:01</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220110 14:33:32.238" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\7296bc04-17c6-4656-b1cf-8129b0257d8c"}</msg>
-<msg timestamp="20220110 14:33:32.609" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\7296bc04-17c6-4656-b1cf-8129b0257d8c"}</msg>
-<status status="PASS" starttime="20220110 14:33:32.238" endtime="20220110 14:33:32.609"/>
+<msg timestamp="20220111 21:15:19.379" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\5524081e-cad8-40b1-88f6-f6f82e77aecc"}</msg>
+<msg timestamp="20220111 21:15:19.617" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\5524081e-cad8-40b1-88f6-f6f82e77aecc"}</msg>
+<status status="PASS" starttime="20220111 21:15:19.377" endtime="20220111 21:15:19.617"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220110 14:33:33.977" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
-<msg timestamp="20220110 14:33:33.977" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220110 14:33:32.609" endtime="20220110 14:33:33.977"/>
+<msg timestamp="20220111 21:15:21.498" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20220111 21:15:21.498" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220111 21:15:19.617" endtime="20220111 21:15:21.498"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:32.238" endtime="20220110 14:33:33.977"/>
+<status status="PASS" starttime="20220111 21:15:19.377" endtime="20220111 21:15:21.498"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>equal</arg>
@@ -32,41 +33,42 @@
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220110 14:33:33.977" endtime="20220110 14:33:33.985"/>
+<status status="PASS" starttime="20220111 21:15:21.498" endtime="20220111 21:15:21.508"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220110 14:33:34.225" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220110 14:33:33.985" endtime="20220110 14:33:34.225"/>
+<msg timestamp="20220111 21:15:21.599" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220111 21:15:21.509" endtime="20220111 21:15:21.599"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:33.985" endtime="20220110 14:33:34.225"/>
+<status status="PASS" starttime="20220111 21:15:21.509" endtime="20220111 21:15:21.599"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:32.234" endtime="20220110 14:33:34.225"/>
+<status status="PASS" starttime="20220111 21:15:19.370" endtime="20220111 21:15:21.599"/>
 </test>
 <test id="s1-s1-t2" name="Deve verificar saldo">
 <kw name="Start Session" library="base" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>chromium</arg>
 <arg>headless=False</arg>
+<arg>slowMo=00:00:01</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220110 14:33:34.313" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\45f8ed78-9667-4e39-a48f-1cef2fa8f2b5"}</msg>
-<msg timestamp="20220110 14:33:34.924" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\45f8ed78-9667-4e39-a48f-1cef2fa8f2b5"}</msg>
-<status status="PASS" starttime="20220110 14:33:34.313" endtime="20220110 14:33:34.924"/>
+<msg timestamp="20220111 21:15:21.669" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\7f2708b6-9387-481f-b521-9ac68248a958"}</msg>
+<msg timestamp="20220111 21:15:21.997" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\7f2708b6-9387-481f-b521-9ac68248a958"}</msg>
+<status status="PASS" starttime="20220111 21:15:21.668" endtime="20220111 21:15:21.997"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220110 14:33:36.256" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
-<msg timestamp="20220110 14:33:36.256" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220110 14:33:34.924" endtime="20220110 14:33:36.256"/>
+<msg timestamp="20220111 21:15:23.808" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20220111 21:15:23.808" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220111 21:15:21.997" endtime="20220111 21:15:23.808"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:34.305" endtime="20220110 14:33:36.256"/>
+<status status="PASS" starttime="20220111 21:15:21.668" endtime="20220111 21:15:23.808"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.navbar-item &gt;&gt; text=Olá Papito, seu saldo é R$ 1000</arg>
@@ -75,51 +77,48 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220110 14:33:36.280" level="INFO">Waited for Element with selector css=.navbar-item &gt;&gt; text=Olá Papito, seu saldo é R$ 1000 at state visible</msg>
-<status status="PASS" starttime="20220110 14:33:36.256" endtime="20220110 14:33:36.280"/>
+<msg timestamp="20220111 21:15:23.836" level="INFO">Waited for Element with selector css=.navbar-item &gt;&gt; text=Olá Papito, seu saldo é R$ 1000 at state visible</msg>
+<status status="PASS" starttime="20220111 21:15:23.808" endtime="20220111 21:15:23.836"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220110 14:33:36.551" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220110 14:33:36.288" endtime="20220110 14:33:36.551"/>
+<msg timestamp="20220111 21:15:23.928" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220111 21:15:23.837" endtime="20220111 21:15:23.928"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:36.288" endtime="20220110 14:33:36.551"/>
+<status status="PASS" starttime="20220111 21:15:23.836" endtime="20220111 21:15:23.928"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:34.297" endtime="20220110 14:33:36.551"/>
+<status status="PASS" starttime="20220111 21:15:21.663" endtime="20220111 21:15:23.928"/>
 </test>
-<doc>Verifica se o app está online</doc>
-<status status="PASS" starttime="20220110 14:33:31.475" endtime="20220110 14:33:36.654"/>
-</suite>
-<suite id="s1-s2" name="Realizar Pix" source="C:\Repositórios GIT\nBank-robotframework\nBank-robot\tests\realizar_pix.robot">
-<test id="s1-s2-t1" name="Fazer PIX">
+<test id="s1-s1-t3" name="Fazer PIX">
 <kw name="Start Session" library="base" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>chromium</arg>
 <arg>headless=False</arg>
+<arg>slowMo=00:00:01</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220110 14:33:36.686" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\9bda7b92-b13c-47e0-a65f-57f382220d1b"}</msg>
-<msg timestamp="20220110 14:33:37.193" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\9bda7b92-b13c-47e0-a65f-57f382220d1b"}</msg>
-<status status="PASS" starttime="20220110 14:33:36.686" endtime="20220110 14:33:37.193"/>
+<msg timestamp="20220111 21:15:24.000" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "C:\\Reposit\u00f3rios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\67a8bf84-7f6f-43ba-914c-25c9488a4327"}</msg>
+<msg timestamp="20220111 21:15:24.322" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"C:\\Repositórios GIT\\nBank-robotframework\\nBank-robot\\logs\\browser\\traces\\67a8bf84-7f6f-43ba-914c-25c9488a4327"}</msg>
+<status status="PASS" starttime="20220111 21:15:23.999" endtime="20220111 21:15:24.327"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<msg timestamp="20220110 14:33:38.690" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
-<msg timestamp="20220110 14:33:38.690" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220110 14:33:37.193" endtime="20220110 14:33:38.690"/>
+<msg timestamp="20220111 21:15:26.549" level="INFO">Successfully initialized new page object and opened url: https://nbank.vercel.app/</msg>
+<msg timestamp="20220111 21:15:26.549" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220111 21:15:24.327" endtime="20220111 21:15:26.549"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:36.686" endtime="20220110 14:33:38.690"/>
+<status status="PASS" starttime="20220111 21:15:23.998" endtime="20220111 21:15:26.549"/>
 </kw>
 <kw name="Factory Pix" library="dados">
 <var>${pix}</var>
-<msg timestamp="20220110 14:33:38.690" level="INFO">${pix} = {'chave-pix': '123456', 'valor': '100'}</msg>
-<status status="PASS" starttime="20220110 14:33:38.690" endtime="20220110 14:33:38.690"/>
+<msg timestamp="20220111 21:15:26.549" level="INFO">${pix} = {'banco': 'Next', 'chave-pix': '123456', 'valor': '100'}</msg>
+<status status="PASS" starttime="20220111 21:15:26.549" endtime="20220111 21:15:26.549"/>
 </kw>
 <kw name="Go To Form" library="actions">
 <kw name="Click" library="Browser">
@@ -127,7 +126,7 @@
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220110 14:33:38.690" endtime="20220110 14:33:38.853"/>
+<status status="PASS" starttime="20220111 21:15:26.551" endtime="20220111 21:15:27.632"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.modal-card-head &gt;&gt; text=PIX</arg>
@@ -136,46 +135,91 @@
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220110 14:33:38.861" level="INFO">Waited for Element with selector css=.modal-card-head &gt;&gt; text=PIX at state visible</msg>
-<status status="PASS" starttime="20220110 14:33:38.853" endtime="20220110 14:33:38.861"/>
+<msg timestamp="20220111 21:15:27.638" level="INFO">Waited for Element with selector css=.modal-card-head &gt;&gt; text=PIX at state visible</msg>
+<status status="PASS" starttime="20220111 21:15:27.632" endtime="20220111 21:15:27.638"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:38.690" endtime="20220110 14:33:38.861"/>
+<status status="PASS" starttime="20220111 21:15:26.551" endtime="20220111 21:15:27.638"/>
 </kw>
 <kw name="Fill Form" library="actions">
 <arg>${pix}</arg>
+<kw name="Select Options By" library="Browser">
+<arg>css=.field select</arg>
+<arg>text</arg>
+<arg>${pix}[banco]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" starttime="20220111 21:15:27.638" endtime="20220111 21:15:28.684"/>
+</kw>
 <kw name="Fill Text" library="Browser">
-<arg>css=input[chave-pix="chave-pix"]</arg>
+<arg>css=input[id="chave-pix"]</arg>
 <arg>${pix}[chave-pix]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220110 14:33:38.869" level="INFO">Fills the text '123456' in the given field.</msg>
-<msg timestamp="20220110 14:33:49.096" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220110 14:33:49.152" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "css=input[chave-pix="chave-pix"]"
-============================================================</msg>
-<status status="FAIL" starttime="20220110 14:33:38.869" endtime="20220110 14:33:49.152"/>
+<msg timestamp="20220111 21:15:28.684" level="INFO">Fills the text '123456' in the given field.</msg>
+<status status="PASS" starttime="20220111 21:15:28.684" endtime="20220111 21:15:29.727"/>
 </kw>
-<status status="FAIL" starttime="20220110 14:33:38.869" endtime="20220110 14:33:49.152"/>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[id="valor"]</arg>
+<arg>${pix}[valor]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220111 21:15:29.727" level="INFO">Fills the text '100' in the given field.</msg>
+<status status="PASS" starttime="20220111 21:15:29.727" endtime="20220111 21:15:30.757"/>
+</kw>
+<status status="PASS" starttime="20220111 21:15:27.638" endtime="20220111 21:15:30.757"/>
+</kw>
+<kw name="Submit Form" library="actions">
+<kw name="Click" library="Browser">
+<arg>css=button &gt;&gt; text=Enviar PIX</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220111 21:15:30.757" endtime="20220111 21:15:31.812"/>
+</kw>
+<status status="PASS" starttime="20220111 21:15:30.757" endtime="20220111 21:15:31.813"/>
+</kw>
+<kw name="Go To Home Page" library="actions">
+<kw name="Go To" library="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the given ``url``.</doc>
+<msg timestamp="20220111 21:15:33.178" level="INFO">Successfully opened URL https://nbank.vercel.app/</msg>
+<status status="PASS" starttime="20220111 21:15:31.814" endtime="20220111 21:15:33.178"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>css=.carousel</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220111 21:15:33.202" level="INFO">Waited for Element with selector css=.carousel at state visible</msg>
+<status status="PASS" starttime="20220111 21:15:33.178" endtime="20220111 21:15:33.202"/>
+</kw>
+<status status="PASS" starttime="20220111 21:15:31.813" endtime="20220111 21:15:33.202"/>
+</kw>
+<kw name="Value Should Be Visible" library="actions">
+<msg timestamp="20220111 21:15:33.203" level="FAIL">Keyword 'actions.Value Should Be Visible' expected 1 argument, got 0.</msg>
+<status status="FAIL" starttime="20220111 21:15:33.203" endtime="20220111 21:15:33.203"/>
 </kw>
 <kw name="End Session" library="base" type="TEARDOWN">
 <kw name="Take Screenshot" library="Browser">
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220110 14:33:49.368" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220110 14:33:49.152" endtime="20220110 14:33:49.368"/>
+<msg timestamp="20220111 21:15:33.367" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220111 21:15:33.205" endtime="20220111 21:15:33.367"/>
 </kw>
-<status status="PASS" starttime="20220110 14:33:49.152" endtime="20220110 14:33:49.368"/>
+<status status="PASS" starttime="20220111 21:15:33.204" endtime="20220111 21:15:33.367"/>
 </kw>
-<status status="FAIL" starttime="20220110 14:33:36.678" endtime="20220110 14:33:49.368">TimeoutError: locator.fill: Timeout 10000ms exceeded.
-=========================== logs ===========================
-waiting for selector "css=input[chave-pix="chave-pix"]"
-============================================================</status>
+<status status="FAIL" starttime="20220111 21:15:23.994" endtime="20220111 21:15:33.367">Keyword 'actions.Value Should Be Visible' expected 1 argument, got 0.</status>
 </test>
-<status status="FAIL" starttime="20220110 14:33:36.662" endtime="20220110 14:33:49.448"/>
+<status status="FAIL" starttime="20220111 21:15:18.618" endtime="20220111 21:15:33.474"/>
 </suite>
-<status status="FAIL" starttime="20220110 14:33:31.444" endtime="20220110 14:33:49.456"/>
+<status status="FAIL" starttime="20220111 21:15:18.597" endtime="20220111 21:15:33.485"/>
 </suite>
 <statistics>
 <total>
@@ -185,8 +229,7 @@ waiting for selector "css=input[chave-pix="chave-pix"]"
 </tag>
 <suite>
 <stat pass="2" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="2" fail="0" skip="0" id="s1-s1" name="Online">Tests.Online</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s2" name="Realizar Pix">Tests.Realizar Pix</stat>
+<stat pass="2" fail="1" skip="0" id="s1-s1" name="Realizar Pix">Tests.Realizar Pix</stat>
 </suite>
 </statistics>
 <errors>

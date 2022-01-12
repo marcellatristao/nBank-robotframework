@@ -18,4 +18,17 @@ Go To Form
 Fill Form
     [Arguments]     ${pix}
 
-    Fill text       css=input[chave-pix="chave-pix"]   ${pix}[chave-pix]
+    Select Options By   css=.field select           text                ${pix}[banco]
+    Fill text           css=input[id="chave-pix"]   ${pix}[chave-pix]
+    Fill text           css=input[id="valor"]       ${pix}[valor]
+
+Submit Form
+
+    Click               css=button >> text=Enviar PIX
+
+Value Should Be Visible
+    [Arguments]     ${saldo-restante}
+    
+    Wait For Elements State     css=.navbar-item >> text=Olá Papito, seu saldo é R$ 900
+    ...     visible     5
+
